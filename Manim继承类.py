@@ -29,7 +29,8 @@ class MovingCode(Code):
         "stroke_opacity":0,
         "stroke_width":0,
     }
-    def get_code_param(self):
+    @staticmethod
+    def get_code_param():
         # 由于会继承Code,而**kwargs不会显示,故提供接口,忘了可以查看参数.
         return [
             "code_file",
